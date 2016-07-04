@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		46DA452C1D2AA81200FA43A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA452B1D2AA81200FA43A3 /* AppDelegate.swift */; };
-		46DA452E1D2AA81200FA43A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA452D1D2AA81200FA43A3 /* ViewController.swift */; };
+		46DA452E1D2AA81200FA43A3 /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA452D1D2AA81200FA43A3 /* RecordSoundViewController.swift */; };
 		46DA45311D2AA81200FA43A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA452F1D2AA81200FA43A3 /* Main.storyboard */; };
 		46DA45331D2AA81200FA43A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DA45321D2AA81200FA43A3 /* Assets.xcassets */; };
 		46DA45361D2AA81200FA43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA45341D2AA81200FA43A3 /* LaunchScreen.storyboard */; };
 		46DA45411D2AA81200FA43A3 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA45401D2AA81200FA43A3 /* PitchPerfectTests.swift */; };
 		46DA454C1D2AA81200FA43A3 /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA454B1D2AA81200FA43A3 /* PitchPerfectUITests.swift */; };
+		46DA455C1D2AB3CC00FA43A3 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA455B1D2AB3CC00FA43A3 /* PlaySoundsViewController.swift */; };
+		46DA455E1D2ABBC500FA43A3 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA455D1D2ABBC500FA43A3 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		46DA45281D2AA81200FA43A3 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DA452B1D2AA81200FA43A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46DA452D1D2AA81200FA43A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46DA452D1D2AA81200FA43A3 /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		46DA45301D2AA81200FA43A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46DA45321D2AA81200FA43A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46DA45351D2AA81200FA43A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		46DA45471D2AA81200FA43A3 /* PitchPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DA454B1D2AA81200FA43A3 /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		46DA454D1D2AA81200FA43A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DA455B1D2AB3CC00FA43A3 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		46DA455D1D2ABBC500FA43A3 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				46DA452B1D2AA81200FA43A3 /* AppDelegate.swift */,
-				46DA452D1D2AA81200FA43A3 /* ViewController.swift */,
+				46DA452D1D2AA81200FA43A3 /* RecordSoundViewController.swift */,
+				46DA455D1D2ABBC500FA43A3 /* PlaySoundsViewController+Audio.swift */,
 				46DA452F1D2AA81200FA43A3 /* Main.storyboard */,
 				46DA45321D2AA81200FA43A3 /* Assets.xcassets */,
 				46DA45341D2AA81200FA43A3 /* LaunchScreen.storyboard */,
 				46DA45371D2AA81200FA43A3 /* Info.plist */,
+				46DA455B1D2AB3CC00FA43A3 /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46DA452E1D2AA81200FA43A3 /* ViewController.swift in Sources */,
+				46DA452E1D2AA81200FA43A3 /* RecordSoundViewController.swift in Sources */,
+				46DA455E1D2ABBC500FA43A3 /* PlaySoundsViewController+Audio.swift in Sources */,
+				46DA455C1D2AB3CC00FA43A3 /* PlaySoundsViewController.swift in Sources */,
 				46DA452C1D2AA81200FA43A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				46DA45521D2AA81200FA43A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46DA45531D2AA81200FA43A3 /* Build configuration list for PBXNativeTarget "PitchPerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				46DA45551D2AA81200FA43A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46DA45561D2AA81200FA43A3 /* Build configuration list for PBXNativeTarget "PitchPerfectUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				46DA45581D2AA81200FA43A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
